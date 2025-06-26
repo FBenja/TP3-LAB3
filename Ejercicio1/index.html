@@ -7,7 +7,7 @@
   </head>
   <body>
     <form id="form">
-      
+      <h2>Add two numbers and select an operation</h2>
       <div>
         <label for="numberOne"
           >First Number
@@ -36,60 +36,8 @@
       </div>
 
     </form>
-    <script>
-      numberOne = document.getElementById("numberOne")
-      numberTWo = document.getElementById("numberTwo")
-      operation = document.getElementById("operation")
-      calculate =document.getElementById("calculate")
-      form = document.getElementById("form");
-
-      zeroValidation = ()=>{
-        
-        numberOneValue = Number(numberOne.value)
-        operationValue = operation.value
-        numberTWoValue = Number(numberTWo.value)
-
-        if (operationValue === "divide" && numberTWoValue === 0) {
-        calculate.disabled = true;
-        alert("division by 0 is not possible");
-        return;
-      } else {
-        calculate.disabled = false;
-      }
-
-        
-        
-        let result 
-        
-    
-        switch(operationValue){
-          case "addition":
-            result = numberOneValue + numberTWoValue
-            break;
-          case "subtraction": 
-            result = numberOneValue - numberTWoValue
-            break;
-          case "multiplication":
-            result = numberOneValue * numberTWoValue
-            break;
-          case "divide":
-            result =  numberOneValue / numberTWoValue
-            break
-          default :
-          result = "not a valid operation"   
-        }
-        alert(result)
-      }
-
-      zeroValidation()
-       numberOne.addEventListener("input", zeroValidation)
-       numberTWo.addEventListener("input", zeroValidation)
-      operation.addEventListener("change", zeroValidation)
-      form.addEventListener("submit", (e)=>{
-        e.preventDefault()
-        zeroValidation()
-      })
-
+    <script src="javascript.js">
     </script>
+    
   </body>
 </html>
