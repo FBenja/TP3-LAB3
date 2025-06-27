@@ -5,7 +5,7 @@ const calculate = document.getElementById("calculate");
 const form = document.getElementById("form");
 
 const zeroValidation = () => {
-  const numberOneValue = Number(numberOne.value);
+
   const numberTwoValue = Number(numberTwo.value);
   const operationValue = operation.value;
 
@@ -45,7 +45,6 @@ const calcular = () => {
 };
 
 
-numberOne.addEventListener("input", zeroValidation);
 operation.addEventListener("change", zeroValidation);
 
 numberTwo.addEventListener("input", () => {
