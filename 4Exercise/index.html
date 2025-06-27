@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>React + Babel</title>
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <!-- React y ReactDOM desde CDN -->
+    <script
+      src="https://unpkg.com/react@18/umd/react.development.js"
+      crossorigin></script>
+    <script
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+      crossorigin></script>
+
+    <!-- Babel (para procesar JSX en el navegador) -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <!-- Tu archivo con JSX -->
+    <script type="text/babel" src="app.jsx"></script>
+  </body>
+</html>
