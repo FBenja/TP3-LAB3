@@ -1,4 +1,4 @@
-const todosEndpoint = "https://jsonplaceholder.typicode.com/todos?_limit=3"
+const todosEndpoint = "https://jsonplaceholder.typicode.com/todos"
 const loading = document.getElementById("loading")
 const BTNcharge = document.getElementById("BTN-charge")
 const error = document.getElementById("error")
