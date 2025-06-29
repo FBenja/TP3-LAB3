@@ -1,0 +1,19 @@
+.low {
+  color: yellow;
+  background-color: rgb(15, 13, 26);
+}
+
+.regular {
+  color: green;
+  background-color: rgb(15, 13, 26);
+}
+
+.semi-overweight {
+  color: orange;
+  background-color: rgb(15, 13, 26);
+}
+
+.overweight {
+  color: red;
+  background-color: rgb(15, 13, 26);
+}
