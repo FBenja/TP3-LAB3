@@ -32,3 +32,4 @@ BTNcharge.addEventListener("click", async () => {
     list.innerHTML = "<strong>There aren't any completed todos</strong>"
   }
 })
+//Unique commit
